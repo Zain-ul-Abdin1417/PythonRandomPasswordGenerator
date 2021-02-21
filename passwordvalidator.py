@@ -13,7 +13,7 @@ class Password_manager:
     def __init__(self, *args):
         """
         first = length of password
-        second = Minimum length
+        
         :param args:
         """
         try:
@@ -42,9 +42,8 @@ class Password_manager:
         self.SUGGESTED_PASSWORD = ''.join(map(str, _password))
         del _password
         print(self.SUGGESTED_PASSWORD)
-        print(len(self.SUGGESTED_PASSWORD))
+        # return self.SUGGESTED_PASSWORD
 
 password = Password_manager(13)
-
 password.create_password()
 
